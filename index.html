@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slime World</title>
+  <meta name="description"
+    content="Sitio web de slimes con secciones de inicio, nosotros, menú, galería, video, formulario y contacto." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="background-glow background-glow--one"></div>
+  <div class="background-glow background-glow--two"></div>
+
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <img src="images/Logo.jpeg" alt="Logo de Slime Shop" class="brand__logo" style="width: 60px; height: auto;" />
+
+        <span class="brand__text">
+          <strong>Slime World</strong>
+          <small>Los mejores slimes</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Abrir menú</span>
+      </button>
+
+      <nav class="nav" id="primary-navigation" data-open="false">
+        <a class="is-active" href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#menu">Menú</a>
+        <a href="#galeria">Galería</a>
+        <a href="#video">Video</a>
+        <a href="#formulario">Formulario</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="container hero__grid reveal">
+        <div class="hero__content">
+          <span class="section-kicker">Bienvenidos a nuestro mundo slime</span>
+          <h1>Slimes suaves, brillantes y súper divertidos.</h1>
+          <p>
+            Descubre una colección pensada para sorprender: texturas esponjosas, efectos glossy, colores pastel y
+            opciones perfectas para regalar o coleccionar.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#menu">Ver menú</a>
+            <a class="btn btn--secondary" href="#galeria">Explorar galería</a>
+          </div>
+
+          <div class="hero__stats">
+            <article>
+              <strong>6+</strong>
+              <span>tipos de slime</span>
+            </article>
+            <article>
+              <strong>100%</strong>
+              <span>estilo personalizado</span>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="orb orb--one"></div>
+          <div class="orb orb--two"></div>
+          <div class="showcase-card">
+            <span class="showcase-card__label">Slime destacado</span>
+            <h2>Butter Slime</h2>
+            <p>Suave, cremoso y con un acabado encantador que hace que se vea irresistible.</p>
+            <div class="showcase-card__swatches">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="nosotros">
+      <div class="container reveal">
+        <div class="section-heading">
+          <span class="section-kicker">Nosotros</span>
+          <h2>Una pequeña marca con mucha creatividad.</h2>
+          <p>
+            Somos un proyecto inspirado en la diversión, los colores suaves y la textura relajante de los slimes.
+            Aquí puedes contar tu historia, hablar de tu emprendimiento o presentar el trabajo de preparatoria con
+            estilo.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="info-card">
+            <span class="info-card__icon">01</span>
+            <h3>Nuestra idea</h3>
+            <p>Ofrecer slimes bonitos, llamativos y accesibles con una identidad visual coherente y memorable.</p>
+          </article>
+          <article class="info-card">
+            <span class="info-card__icon">02</span>
+            <h3>Nuestro estilo</h3>
+            <p>Usamos tonos rosa, malva y pastel para crear una estética dulce, moderna y visualmente agradable.</p>
+          </article>
+          <article class="info-card">
+            <span class="info-card__icon">03</span>
+            <h3>Nuestra meta</h3>
+            <p>Presentar un sitio claro, responsivo y fácil de modificar para que tú cambies nombre, logo y contenido.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="menu">
+      <div class="container reveal">
+        <div class="section-heading">
+          <span class="section-kicker">Menú</span>
+          <h2>Tipos de slime y precios.</h2>
+          <p>Dejé esta sección lista con tarjetas para que tus productos se vean ordenados y fáciles de leer.</p>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card">
+            <div class="menu-card__image-wrap">
+              <img class="menu-card__image" src="images/ButterSlime.jpeg" alt="Butter Slime" loading="lazy" />
+            </div>
+            <div class="menu-card__top">
+              <h3>Butter Slime</h3>
+              <span class="price">$85 MXN</span>
+            </div>
+            <p>Textura cremosa, suave y muy moldeable.</p>
+            <ul>
+              <li>Color: rosa pastel</li>
+              <li>Ideal para decoraciones</li>
+              <li>Acabado muy uniforme</li>
+            </ul>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-card__image-wrap">
+              <img class="menu-card__image" src="images/glossy.jpeg" alt="Glossy Slime" loading="lazy" />
+            </div>
+            <div class="menu-card__top">
+              <h3>Glossy Slime</h3>
+              <span class="price">$95 MXN</span>
+            </div>
+            <p>Brillo intenso y una apariencia muy llamativa.</p>
+            <ul>
+              <li>Color: rosa brillante</li>
+              <li>Se ve súper elegante</li>
+              <li>Efecto visual iridiscente</li>
+            </ul>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-card__image-wrap">
+              <img class="menu-card__image" src="images/clean.jpeg" alt="Clear Slime" loading="lazy" />
+            </div>
+            <div class="menu-card__top">
+              <h3>Clear Slime</h3>
+              <span class="price">$90 MXN</span>
+            </div>
+            <p>Transparente y perfecto para diseños con encanto.</p>
+            <ul>
+              <li>Color: rosa translúcido</li>
+              <li>Se presta para charms</li>
+              <li>Estética limpia y moderna</li>
+            </ul>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-card__image-wrap">
+              <img class="menu-card__image" src="images/cloude.jpeg" alt="Cloud Slime" loading="lazy" />
+            </div>
+            <div class="menu-card__top">
+              <h3>Cloud Slime</h3>
+              <span class="price">$80 MXN</span>
+            </div>
+            <p>Suave, esponjoso y con una apariencia adorable.</p>
+            <ul>
+              <li>Color: rosa nube</li>
+              <li>Textura fluffy</li>
+              <li>Ideal para fotos bonitas</li>
+            </ul>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-card__image-wrap">
+              <img class="menu-card__image" src="images/crunchy.jpeg" alt="Crunchy Slime" loading="lazy" />
+            </div>
+            <div class="menu-card__top">
+              <h3>Crunchy Slime</h3>
+              <span class="price">$100 MXN</span>
+            </div>
+            <p>Con textura y sonido satisfactorio al jugarlo.</p>
+            <ul>
+              <li>Color: rosa con detalles</li>
+              <li>Incluye mix-ins</li>
+              <li>Muy entretenido</li>
+            </ul>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-card__image-wrap">
+              <img class="menu-card__image" src="images/ice.jpeg" alt="Icee Slime" loading="lazy" />
+            </div>
+            <div class="menu-card__top">
+              <h3>Icee Slime</h3>
+              <span class="price">$88 MXN</span>
+            </div>
+            <p>Ligero, aireado y con una sensación fresca.</p>
+            <ul>
+              <li>Color: rosa claro</li>
+              <li>Textura esponjada</li>
+              <li>Muy agradable al tacto</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="galeria">
+      <div class="container reveal">
+        <div class="section-heading">
+          <span class="section-kicker">Galería</span>
+          <h2>Galeria de diversión</h2>
+        </div>
+
+        <div class="gallery-grid">
+          <article class="gallery-card gallery-card--large">
+            <img src="images/fotouno.jpeg" alt="Foto de Butter Slime" class="gallery-card__image"
+              style="width: 100%; height: auto; object-fit: cover;" />
+          </article>
+          <article class="gallery-card">
+            <img src="images/fotodos.jpeg" alt="Foto de Glossy Slime" class="gallery-card__image"
+              style="width: 100%; height: auto; object-fit: cover;" />
+          </article>
+          <article class="gallery-card">
+            <img src="images/fototres.jpeg" alt="Foto de Clear Slime" class="gallery-card__image"
+              style="width: 100%; height: auto; object-fit: cover;" />
+          </article>
+          <article class="gallery-card">
+            <img src="images/fotocuatro.jpeg" alt="Foto de Cloud Slime" class="gallery-card__image"
+              style="width: 100%; height: auto; object-fit: cover;" />
+          </article>
+          <article class="gallery-card">
+            <img src="images/fotocinco.jpeg" alt="Foto 5" class="gallery-card__image"
+              style="width: 100%; height: auto; object-fit: cover;" />
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="video">
+      <div class="container reveal">
+        <div class="section-heading">
+          <span class="section-kicker">Video</span>
+          <h2>Video promocional.</h2>
+        </div>
+
+        <div class="media-frame">
+          <div class="media-frame__placeholder">
+
+            <iframe title="Video promocional" src="https://www.youtube.com/embed/Wt7NOjVNpxM" loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="formulario">
+      <div class="container reveal">
+        <div class="section-heading">
+          <span class="section-kicker">Formulario</span>
+          <h2>Formulario de interaccion con los usuarios</h2>
+        </div>
+        <iframe title="Formulario de Google"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSdxbzNZGNIvYKjfJ6NOvQ6CP4naMIiXRy8Hu2Uke7GGNyv6qw/viewform"
+          loading="lazy" class="form-frame"></iframe>
+      </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="contacto">
+      <div class="container reveal">
+        <div class="section-heading">
+          <span class="section-kicker">Contacto</span>
+          <h2>Datos de contacto.</h2>
+        </div>
+
+        <div class="contact-grid">
+          <article class="contact-card">
+            <span class="contact-card__label">Correo</span>
+            <a href="mailto:america.coro022009@gmail.com">america.coro022009@gmail.com</a>
+          </article>
+          <article class="contact-card">
+            <span class="contact-card__label">Teléfono</span>
+            <a href="tel:+5210000000000">+52 624 238 2510</a>
+          </article>
+          <article class="contact-card">
+            <span class="contact-card__label">Instagram</span>
+            <a href="#" target="_blank" rel="noreferrer">@slimeworld</a>
+          </article>
+          <article class="contact-card">
+            <span class="contact-card__label">Horario</span>
+            <p>Lunes a sábado, 9:00 a 18:00</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Slime Shop. Todos los derechos reservados.</p>
+      <a href="#inicio">Volver arriba</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
